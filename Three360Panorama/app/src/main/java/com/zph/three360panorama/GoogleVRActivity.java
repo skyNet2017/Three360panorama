@@ -2,7 +2,7 @@ package com.zph.three360panorama;
 
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.vr.sdk.widgets.pano.VrPanoramaEventListener;
 import com.google.vr.sdk.widgets.pano.VrPanoramaView;
