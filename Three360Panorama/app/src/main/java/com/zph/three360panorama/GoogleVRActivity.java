@@ -49,7 +49,7 @@ public class GoogleVRActivity extends AppCompatActivity {
     private void initVrPaNormalView() {
         mVrPanoramaView = (VrPanoramaView) findViewById(R.id.mVrPanoramaView);
         paNormalOptions = new VrPanoramaView.Options();
-        paNormalOptions.inputType = VrPanoramaView.Options.TYPE_STEREO_OVER_UNDER;
+        paNormalOptions.inputType = VrPanoramaView.Options.TYPE_MONO;
 //        mVrPanoramaView.setFullscreenButtonEnabled (false); //隐藏全屏模式按钮
         mVrPanoramaView.setInfoButtonEnabled(false); //设置隐藏最左边信息的按钮
         mVrPanoramaView.setStereoModeButtonEnabled(false); //设置隐藏立体模型的按钮
@@ -59,7 +59,12 @@ public class GoogleVRActivity extends AppCompatActivity {
         mVrPanoramaView.setTouchTrackingEnabled(true);
         mVrPanoramaView.setPureTouchTracking(true);
         //加载本地的图片源
-        mVrPanoramaView.loadImageFromBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.andes), paNormalOptions);
+        mVrPanoramaView.loadImageFromBitmap(
+                BitmapFactory.decodeResource(getResources(),
+                //R.drawable.andes
+                        R.drawable.pxl_20230218_093146894_photosphere
+                        //R.drawable.dji_fly_20230124_144636_723_1674542817436_pano
+        ), paNormalOptions);
         //设置网络图片源
 //        panoWidgetView.loadImageFromByteArray();
     }

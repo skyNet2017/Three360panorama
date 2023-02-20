@@ -21,7 +21,11 @@ public class OpenGLActivity extends AppCompatActivity {
         setContentView(R.layout.activity_open_gl);
         mGLPanorama= (GLPanorama) findViewById(R.id.mGLPanorama);
         //传入全景图片
-        mGLPanorama.setGLPanorama(R.drawable.imggugong);
+        mGLPanorama.setGLPanorama(
+                //R.drawable.imggugong
+                 R.drawable.pxl_20230218_093146894_photosphere
+                //R.drawable.dji_fly_20230124_144636_723_1674542817436_pano
+        );
     }
 
 }
